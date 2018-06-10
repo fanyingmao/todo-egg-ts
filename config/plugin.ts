@@ -10,9 +10,15 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-redis',
   },
-  mongoose: {
+   // 挂载 egg-jwt
+   jwt: {
     enable: true,
-    package: 'egg-mongoose',
+    package: 'egg-jwt',
+  },
+  // 挂载 egg-sequelize
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
   },
 };
 
