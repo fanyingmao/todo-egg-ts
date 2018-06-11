@@ -28,7 +28,8 @@
     "egg-redis": "^2.0.0",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^3.1.4",
-    "mysql2": "^1.5.3"
+    "mysql2": "^1.5.3",
+    "ym-mongodb-sql": "1.0.2"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

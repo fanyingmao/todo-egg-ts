@@ -1,9 +1,10 @@
-import { Controller } from "egg";
-
+import { Controller } from 'egg';
+import { find } from 'ym-mongodb-sql';
 export default class UserController extends Controller {
   public async register() {
     const { ctx } = this;
-    ctx.body = 'register';
+    let a = find('tlf_user', { id: { $in: [] } }, { name: 1 });
+    ctx.body = a.sql;
   }
   public async login() {
     const { ctx } = this;
