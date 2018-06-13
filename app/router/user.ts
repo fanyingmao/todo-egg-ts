@@ -14,13 +14,13 @@ module.exports = (app: Application) => {
   const userController = controller.user;
 
   // 注册
-  router.get( '/register', userController.register);
+  router.post('/user/register', userController.register);
   // 登录
-  router.get('/login', userController.login);
+  router.post('/user/login', userController.login);
   // 重置密码
-  router.post('/password/reset', userController.updatePassword);
+  router.post('/user/password/reset', userController.updatePassword);
   // 验证密码的正确性
-  router.post('/password/verify', userController.resetPassword);
+  router.post('/user/password/verify', userController.resetPassword);
   // 发送密码重置邮件
-  router.post('/password/email', userController.sendPasswordResetEmail);
+  router.post('/user/password/email', userController.sendPasswordResetEmail);
 };
