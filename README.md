@@ -1,6 +1,6 @@
-# hackernews-async-ts
+# todo-egg-ts
 
-[Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
+todo using typescript && egg
 
 ## QuickStart
 
