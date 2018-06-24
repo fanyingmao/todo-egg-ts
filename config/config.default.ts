@@ -16,6 +16,13 @@ export default (appInfo: EggAppInfo) => {
     appInfo.name
   }`;
 
+  // 安全配置
+  config.security = {
+    csrf: {
+      enable: false
+    }
+  };
+
   // override config from framework / plugin
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1528096312632_2882';
@@ -68,12 +75,12 @@ export default (appInfo: EggAppInfo) => {
         // 指定在调用 sequelize.define 时使用的选项
         define: {
           underscored: true, // 字段以下划线（_）来分割（默认是驼峰命名风格）
-          charset: 'utf8mb4', // 字符集
+          charset: 'utf8mb4' // 字符集
         },
-        timezone: '+08:00', // 东八时区
+        timezone: '+08:00' // 东八时区
       },
-      agent: true,
-    },
+      agent: true
+    }
   };
 
   return {
