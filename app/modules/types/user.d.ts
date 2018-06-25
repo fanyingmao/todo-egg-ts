@@ -8,24 +8,6 @@ import UserPasswordResetRepository from "../user/repositories/user_password_rese
 
 // User 模块
 declare namespace User {
-  interface Controller {
-    user: UserController
-  }
-
-  interface Config {
-  }
-
-  interface Service {
-    auth: AuthService;
-  }
-
-  interface Middleware {
-  }
-
-  interface Repository {
-    user: UserRepository;
-    userPasswordReset: UserPasswordResetRepository
-  }
 
   interface ValidateRule {
     auth: AuthValidate

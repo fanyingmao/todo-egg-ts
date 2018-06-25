@@ -1,4 +1,4 @@
-import { User } from './user'
+import { User } from './types/user'
 
 declare module 'egg' {
   export interface Application {
